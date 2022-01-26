@@ -1,0 +1,931 @@
+*{
+    margin: 0;
+    padding:0 ;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#1b1c5f;
+    transition: all .3s;
+    scroll-behavior: smooth;
+   
+}
+
+.slot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+body{
+    color: #fff;
+    min-width: 365px;
+   
+}
+
+.loop{
+    min-width: 365px;
+    position: absolute;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.yip{
+    width:60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgb(243, 243, 243) ;
+    background-color: rgb(231, 229, 229);
+    border-radius: 10px;
+}
+.yip:hover{
+    box-shadow: 0px 2px 25px white;
+    background-color: #fff;
+}
+.hp{
+    list-style:none ;
+    text-decoration:none ;
+    display: flex;
+    margin-top: 22px
+}
+.gooi{
+    color: #fff;
+    
+}
+.goop{
+    margin: 0 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    padding-bottom: 5px;
+    scroll-behavior: smooth;
+    
+}
+.goop:hover{
+    color: rgb(209, 228, 245);
+}
+.goop::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    transform: scale(0.1);
+    transform-origin: 0% 100%;
+    transition: transform .6s ease;
+}
+.goop:hover::after{
+    transform: scale(1,1);
+    
+}
+
+.folp{
+    height: 95vh;
+    background-image: url(solo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    width:100%;
+}
+.eran{
+    padding-top: 30vh;
+    font-size: 60px;
+    margin-left: 20%;
+}
+.op{
+    margin-left: 20%;
+    font-size: 35px;
+    margin-top: 30px;
+}
+.topi{
+    margin-top: 35px;
+    width: 150px;
+    margin-left: 20%;
+    height: 55px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(99, 172, 221);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.topi:hover{
+    width: 160px;
+    height: 50px;
+    transition: .3s;
+    color:rgb(255, 255, 255);
+    
+}
+@media (max-width:700px) {
+    .eran{
+        margin-left: 10%;
+    }
+    .op{
+        margin-left: 10%;
+    }
+    .topi{
+        margin-left: 10%;
+    }
+    .mai{
+        margin-right: 0;
+    }
+    
+}
+@media (max-width:550px){
+    
+    .op{
+        font-size: 25px;
+        margin-left: 5%;
+    }
+    .eran{
+        margin-left:5% ;
+
+    }
+    .topi{
+        margin-left: 5%;
+    }
+    .goop{
+        font-size:15px ;
+    }
+    .hp{
+        margin-top: 18px;
+    }
+    .yip{
+        width: 50px;
+        height: 50px;
+    }
+}
+.born{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+.born::before{
+  content: '';
+  position: absolute;
+  bottom: 52px;
+  left: 0;
+
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#1b1c5f,transparent);
+  z-index: 10;
+
+}
+
+.ra{
+    color:#fff;
+    
+    font-size: 45px;
+    text-align: center;
+    
+    font-weight: 500;
+}
+@media (max-width:650px) {
+    .ra{
+    font-size:25px ;
+    }   
+    .born::before{
+        bottom:25px;
+    } 
+}
+
+
+
+.BHOP{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+   
+}
+
+.kio{
+    color:black;
+    display: flex;
+    flex-direction:column ;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+    height: 380px;
+    background: #fff;
+    box-shadow: 0px 2px 10px black ;
+    margin: 10px 10px;
+    cursor:default;
+
+}
+.dell{
+    width: 100%;
+}
+.dell:hover .lki{
+    height: 70px;
+    width: 70px;
+    transition: .3s;
+}
+
+.voli{
+    text-align: center;
+
+
+}
+.voli:hover .bld {
+    margin-top: 30px;
+    transition: .3s;
+}
+.voli:hover .inte {
+    text-shadow: 0 2px 20px black;
+    transition: .3s;
+}
+.lki{
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+    
+}
+
+.bld{
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(29, 29, 95);
+}
+.inte{
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 25px;
+    font-style: italic;
+    width:80%;
+    margin-left: 10%;
+
+}
+@media (max-width:1230px ) {
+    .kio{
+        width: 370px;
+    }
+    
+}
+@media (max-width:790px ) {
+    .kio{
+        width: 320px;
+    }
+    
+}
+@media (max-width:680px ) {
+    .kio{
+        width:360px;
+    }
+}
+
+.rto{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.booli{
+    width: 84%;
+    display: flex;
+    
+}
+.eror{
+    width: 50%;
+   
+}
+.loset{
+    width: 628px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.wert{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+.wrt{
+    width: 95%;
+    margin-top: 30px;
+    
+}
+
+
+
+@media (max-width:1500px) {
+    .loset{
+        font-size: 40px;
+        width: 90%;
+    }
+    
+}
+@media (max-width:1050px) {
+    .booli{
+        display: flex;
+        flex-direction: column;
+    }
+    .eror{
+        width: 100%;
+    }
+    .wert{
+        width: 100%;
+    }
+    .wrt{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .loset{
+        width: 100%;
+    }
+}
+
+.dud{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+@media (max-height:800px) {
+    .born::before{
+        height: 50px;
+    }
+    
+}
+
+.soap{
+    display: flex;
+    
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+}
+ a{
+     list-style: none;
+     text-decoration:none ;
+ }
+.run{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap:wrap ;
+    
+    
+
+}
+.bhag{
+   
+    margin: 50px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.jhon{
+    width: 100%;
+    height:55vh;
+    border-radius: 5px ;
+}
+@media (max-width:1250px) {
+    .jhon{
+        width: 100%;
+        height: auto;
+    }
+   
+}
+
+
+
+
+
+.jimo{
+    background-color: #1b1c5f;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.gigi{
+    width: 400px;
+    height:300px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+@media (max-width:1420px) {
+    .gigi{
+        width: 500px;
+        height: auto;
+    }
+    
+}
+@media (max-width:1050px) {
+    .gigi{
+        width: 400px;
+        height: auto;
+    }
+    
+}
+@media (max-width:860px) {
+    .gigi{
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+    }
+    
+}
+
+
+a{
+    color: #fff;
+}
+.lopk{
+    width: 50%;
+    background-color: rgb(17, 17, 82);
+}
+.lopi{
+    width: 50%;
+    background-color:  rgb(17, 17, 82);
+}
+.jimy{
+    
+    background-color: rgb(17, 17, 82);
+    padding-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.hong{
+    display: flex;
+    
+    margin-left: 20%;
+    padding-top: 60px;
+
+}
+.cena{
+    display: flex;
+    width: 100%;
+
+    
+    background-color:   rgb(17, 17, 82);
+
+    
+
+}
+.china{
+    flex-direction: column;
+}
+#ship{
+    font-size: 35px;
+    
+
+}
+.boli{
+    margin-left: 20px;
+}
+.hing{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .cena{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .hong{
+        margin-left:0 ;
+        display: flex;
+        flex-direction: column;
+    }
+    .boli{
+        margin-left: 0px;
+    }
+    .lopk{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .lopi{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .jhon{
+        height: 27vh;
+    }
+    
+
+}
+.jupiter{
+    padding-top: 100px;
+    background-color:  rgb(17, 17, 82);
+    width: 100%;
+    display: flex;
+
+}
+.losen{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+
+}
+.Get{
+    font-size: 30px;
+    font-weight: 100;
+    width: 100%;
+}
+.lolf{
+    margin-top: 20px;
+}
+.holl{
+    width: 400px;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    padding-left: 10px;
+    color:  rgb(17, 17, 82);
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
+
+}
+.holl:hover{
+    background-color: rgb(242, 242, 243);
+}
+.holi:hover{
+    background-color: rgb(220, 220, 228);
+}
+.holl:focus{
+    background-color: #fff;
+    color: black;
+    transition: .3s;
+    box-shadow:  inset 0 1px 2px black;
+}
+.holi{
+    width: 400px;
+    margin-top: 20px;
+    height: 100px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    padding-left: 10px;
+    color: rgb(17, 17, 82);
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
+    outline: none;
+
+
+}
+.holi:focus{
+    background-color: #fff;
+    box-shadow:  inset 0 1px 2px black;
+    color: black;
+    transition: .3s;
+}
+.ert{
+    margin-top: 20px;
+    height: 50px;
+    border-radius:10px ;
+    width: 130px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(125, 180, 252);
+    
+
+}
+.ert:hover{
+    background-color: rgb(13, 13, 73);
+    color: #fff;
+    width: 150px;
+    transition: .5s;
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
+
+}
+.amrca{
+    padding-bottom: 50px;
+    width: 50%;
+}
+.amrca{
+    width: 50%;
+    padding-left:10% ;
+}
+.enter{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.dimp{
+    box-shadow: 2px 2px 10px black ;
+    border-radius: 5px;
+    margin-top: 20px;
+   
+}
+@media (max-width:1150px) {
+    .jupiter{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+    .losen{
+        width: 100%;
+        justify-content: center;
+        padding-left:0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .bob
+{
+    
+    display: flex;
+    width: 60%;
+    background-color: red;
+    
+    margin-left: 20vh;
+    padding-left: 12%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.gol{
+    display: flex;
+    justify-content: center;
+    padding-right: 23vh;
+} 
+@media (max-width:800px) {
+    .bob{
+     margin-left: 10vh;
+    }
+    .gol{
+        padding-left:17vh ;
+        
+    }
+    
+}
+@media (max-width:630px) {
+    .bob{
+     margin-left: 0vh;
+     width: 100%;
+     padding-left: 16%;
+    }
+   
+   
+    
+} 
+.holl{
+
+    display: flex ;
+    justify-content:center ;
+    
+    }
+   .full{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+
+   }
+    .amrca{
+        margin-top: 50px;
+        width: 50%;
+        padding-left: 5%;
+        
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    
+}
+@media (max-width:600px){
+    .dimp{
+        width: 350px;
+        height: 200px;
+    }
+    .holl{
+        width: 250px;
+
+    }
+    .holi{
+     width: 250px;
+    }
+}
+.did{
+    width: 100%;
+    
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-bottom:50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tity{
+     width: 50px;
+     height: 50px;
+}
+.tity:hover{
+    width: 60px;
+    height: 60px;
+    transition: .2s;    
+}
+#wrt{
+    color: rgb(65, 65, 228);
+    font-size: 30px;
+}
+#erty{
+    color: rgb(62, 155, 218) ;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.vir{
+    display: flex;
+    margin-top: 15px;
+}
+#sdf{
+    color: rgb(247, 93, 152);
+    font-size: 30px;
+    margin-left: 10px;
+}
+.gog{
+    cursor: pointer;
+}
+#zxc{
+    color: rgb(37, 103, 158);
+    font-size: 30px;
+    margin-left: 10px;
+}
+.gog:hover{
+    font-size: 55px;
+    transition: .2s;
+}
+#wrt:hover{
+    font-size: 40px;
+    transition: .2s;
+}
+#erty:hover{
+    font-size: 40px;
+    transition: .2s;
+}
+#sdf:hover{
+    font-size: 40px;
+    transition: .2s;
+}
+#zxc:hover{
+    font-size: 40px;
+    transition: .2s;
+}
+.fol{
+    background-color:#fff ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+.jin{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    
+}
+.non{
+    width: 100%;
+    display:flex;
+    background-color:  rgb(17, 17, 82);
+    padding-top:50px ;
+    padding-bottom: 50px;
+
+}
+.mum{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+
+}
+.lopo{
+    width: 300px;
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    background-color: rgb(255, 255, 255);
+
+}
+.lopo:hover{
+    background-color:rgb(243, 243, 243) ;
+}
+.duf{
+   margin-top: 30px;
+   outline: none;
+   border: none;
+   border-radius: 8px;
+   width: 300px;
+   height: 100px;
+   padding-top: 10px;
+   padding-left: 10px;
+}
+.duf:hover{
+    background-color:rgb(243, 243, 243) ;
+}
+.futt{
+    width: 130px;
+    background-color: #fff;
+    color: black;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+
+}
+.joi{
+    margin-top: 15px;
+    font-size:17px;
+}
+.shop{
+    width: 50%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+
+}
+.jui{
+    margin-top: 15px;
+    font-size: 17px;
+}
+.hopi{
+  margin-top: 20px;
+
+
+}
+@media (max-width:1050px) {
+    .mum{
+        padding-left: 0;
+    }
+    .shop{
+        padding-left: 0;
+    }
+    
+}
+@media (max-width:850px){
+    .non{
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: center;
+    }
+    .mum{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .shop{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .lopo{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .duf{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .huo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hopi{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}

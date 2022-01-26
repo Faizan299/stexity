@@ -1,0 +1,401 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stexity PVT Ltd.</title>
+    <link rel="shortcut icon" type="img/png" href="{% static 'images/shoign.png' %}">
+
+    <link rel="stylesheet" href="{% static 'design/style.css' %}">
+
+    <title></title>
+</head>
+
+<body>
+
+    <div class="slot">
+        <div class="loop">
+            <header class="mai">
+                <a href="index.html"> <img class="yip" src="{% static 'images/shoign.png' %}"></a>
+            </header>
+            <div class="dop">
+                <ul class="hp">
+                    <a class="gooi" href="index.html">
+                        <li class="goop">Home</li>
+                    </a>
+
+                    <a href="#roti">
+                        <li class="goop">Services</li>
+                    </a>
+                    <a href="#beam">
+                        <li class="goop">Portfolio</li>
+                    </a>
+                    <a href="#cont">
+                        <li class="goop">Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="folp">
+        <div class="lool">
+            <h1 class="eran">Stexity</h1>
+            <p class="op">Innovation Meets Efficiency</p>
+            <a href="#beam"> <button class="topi">Portfolio</button></a>
+        </div>
+    </div>
+
+    <div class="born">
+
+        <h1 id="roti" class="ra"> ​Services we offer </h1>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="BHOP">
+
+
+
+        <div class="kio">
+            <div class="dell">
+                <img class="lki" src="{% static 'images/seo.png' %}">
+            </div>
+
+            <div class="voli">
+                <h1 class="bld">SEO</h1>
+                <p class="inte"> We serve clients who demand a comprehensive, full-service search engine marketing
+                    strategy.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="kio">
+            <div class="dell">
+                <img class="lki" src="{% static 'images/software.png' %}">
+            </div>
+
+            <div class="voli">
+                <h1 class="bld">UI/UX</h1>
+                <p class="inte"> We design responsive and attractive websites that meet all of your requirements while
+                    staying within your schedule and budget constraints.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="kio">
+            <div class="dell">
+                <img class="lki" src="{% static 'images/cloud.png' %}">
+            </div>
+
+            <div class="voli">
+                <h1 class="bld"> Cloud Computing</h1>
+                <p class="inte"> We provide cloud services integration solutions that enable scalable computation for
+                    seamless connection with business intelligence, CRM, ERP, and identity management systems.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="kio">
+            <div class="dell">
+                <img class="lki" src="{% static 'images/mobile.png' %}">
+            </div>
+
+            <div class="voli">
+                <h1 class="bld"> Application Development</h1>
+                <p class="inte"> We provide a variety of high-quality desktop applications to assist you in running your
+                    business more effectively and efficiently.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="rto">
+        <div class="booli">
+            <div class="eror">
+                <h1 class="loset">We advise organizations in value creation strategies</h1>
+
+            </div>
+            <div class="wert">
+                <p class="wrt"> Stexity is a software development company that specializes in web and mobile app design,
+                    development, integration, and customization. We use cutting edge technologies to provide high
+                    quality solutions to our clients. At Stexity, our work process involves assessing the client’s needs
+                    through clear and proactive communication, designing the optimal solution, implementing the
+                    identified solution using the best coding practises, and ensuring that the highest quality product
+                    is delivered by utilizing a rigorous testing process.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dud">
+        <h1 id="beam" class="ra"> Latest Projects</h1>
+    </div>
+
+
+
+
+
+    
+    <div class="jimo">
+        {% for dat in task %}
+            <div class="jhimy">
+             
+                <img class="gigi" src="{{ dat.image.url }}">
+               
+            </div>
+
+            <div class="jhimy">
+                <h1 class="jhimy">{{ dat.name }}</h1>
+               
+            </div>
+
+            <div class="jhimy" >
+                <p class="jhimy">{{ dat.url }}</p>
+               
+            </div>
+            <div class="jhimy" >
+                <p class="jhimy">{{ dat.desc }}</p>
+               
+            </div>
+        {% endfor %}
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="jimy">
+
+        <h1 id="cont" class="ra">Let's Connect</h1>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="cena">
+
+        <div class="lopk">
+
+            <div class="hong">
+                <div class="china">
+                    <ion-icon id="ship" name="call-outline"></ion-icon>
+                </div>
+                <div class="boli">
+                    <p class="jmay">Phone</p>
+                    <p class="hing">+92 308 2082389</p>
+                </div>
+
+
+            </div>
+
+            <div class="hong">
+                <div class="china">
+                    <ion-icon id="ship" name="mail-outline"></ion-icon>
+                </div>
+                <div class="boli">
+                    <p class="jmay">Email</p>
+                    <a href="mailto:sunnyrahputtrana00@gmail.com">
+                        <p class="hing">sunnyrajputtrana00@gmail.com</p>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="lopi">
+
+            <div class="hong">
+                <div class="china">
+                    <ion-icon id="ship" name="location-outline"></ion-icon>
+                </div>
+                <div class="boli">
+                    <p class="jmay">Our Main Office</p>
+                    <p class="hing">Suite No. 609, 6th Floor, M.Yousuf Chamber</p>
+                </div>
+
+
+            </div>
+
+            <div class="hong">
+                <div class="china">
+                    <ion-icon id="ship" name="location-outline"></ion-icon>
+                </div>
+                <div class="boli">
+                    <p class="jmay">OUR MAIN OFFICE</p>
+
+                    <p class="hing">Plot# A/30 K.C.H.S.U., 8, Bangalore Town Block A Bangalore Town, <br> Karachi,
+                        75350, Pakistan</p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="non">
+        <div class="mum">
+
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{message}}
+            </div>
+            {% endfor %}
+            {% endif %}
+            <form method="POST">
+                {% csrf_token %}
+                <h1 class="goli">Get a Free Quote !</h1>
+                <p class="joi">
+                    REACH OUT TO US AND WE WILL GET BACK TO YOU SHORTLY!
+                </p>
+
+                
+
+                <input name="name" class="lopo" placeholder="Enter Your Name" type="text">
+                <input name="email" class="lopo" placeholder="Enter a Valid Email Adress " type="text">
+                <textarea name="message" class="duf" placeholder="Enter Your Message " cols="30" rows="10"></textarea>
+
+
+                    <button class="futt">Submit</button>
+                </form>
+        </div>
+
+    </div>
+    <div class="shop">
+        <h1 class="jhin">we are here</h1>
+        <p class="jui">Mon-SAT 9:00am- 10pm / Phones are open 24/7</p>
+
+
+
+
+        <iframe class="hopi"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d926685.2523939587!2d67.083305!3d24.868485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x290fd16a1038c48!2sStexity%20(PVT)%20Ltd.!5e0!3m2!1sen!2sus!4v1636008891370!5m2!1sen!2sus"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+    </div>
+    </div>
+
+
+    <div class="did">
+        <div class="cic">
+            <a href="index.html"><img class="tity" src="{% static 'images/shoign.png' %}"></a>
+        </div>
+        <ul class="vir">
+            <a href="https://www.facebook.com/">
+                <li class="gog">
+                    <ion-icon id="wrt" name="logo-facebook"></ion-icon>
+                </li>
+            </a>
+            <a
+                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiwqYvd7vvzAhVLNewKHRTHBJcQFnoECA4QAQ&url=https%3A%2F%2Ftwitter.com%2F%3Flang%3Den&usg=AOvVaw1Sd3B-_cNZOLSmhw9z2lOm">
+                <li class="gog">
+                    <ion-icon id="erty" name="logo-twitter"></ion-icon>
+                </li>
+            </a>
+            <a
+                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwib1uLo7vvzAhWjMewKHUTFBRUQFnoECBMQAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm">
+                <li class="gog">
+                    <ion-icon id="sdf" name="logo-instagram"></ion-icon>
+                </li>
+            </a>
+            <a
+                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjNvtr47vvzAhWwsKQKHWQfCXEQFnoECBYQAQ&url=https%3A%2F%2Fwww.linkedin.com%2Fsignup&usg=AOvVaw3EHhnLt1SjocKPiuEqrI4f">
+                <li class="gog">
+                    <ion-icon id="zxc" name="logo-linkedin"></ion-icon>
+                </li>
+            </a>
+        </ul>
+
+
+    </div>
+
+    <div class="fol">
+        <p class="jin"> 2021 © Stexity PVT Ltd. - Copyright. All Rights Reserved.</p>
+    </div>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+    {% block content%}{% endblock %}
+</body>
+
+</html>
