@@ -1,1 +1,1 @@
-web: gunicorn stexity.wsgi
+web: gunicorn form.wsgi
