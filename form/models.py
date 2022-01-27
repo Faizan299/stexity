@@ -3,6 +3,9 @@ from email.mime import image
 from email.policy import default
 from django.db import models
 from PIL import Image
+from django.shortcuts import render
+from django.shortcuts import Greeting
+
 
 class Contact_Form(models.Model):
     name = models.CharField(max_length=100)
@@ -33,3 +36,12 @@ class Post(models.Model):
 
         def __str__(self):
             return self.name
+
+        def db(request):
+
+            greeting = Greeting()
+            greeting.save()
+
+            greetings = Greeting.objects.all()
+
+            return render(request, 'main.html', {'greetings': greetings})
