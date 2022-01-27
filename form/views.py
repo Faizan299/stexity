@@ -1,4 +1,3 @@
-from tkinter.messagebox import RETRY
 from unicodedata import name
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
