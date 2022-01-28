@@ -29,7 +29,7 @@ def form(request):
 
     return render(request, 'stexity_website/main.html', context)
 
-
+#threading code 
 def run():
     global message, email, name
     message = message
