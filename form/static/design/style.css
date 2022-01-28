@@ -173,7 +173,6 @@ body{
   position: absolute;
   bottom: 52px;
   left: 0;
-
   width: 100%;
   height: 100px;
   background: linear-gradient(to top,#1b1c5f,transparent);
@@ -222,12 +221,32 @@ body{
     cursor:default;
 
 }
+.data_kio{
+    color:black;
+    display: flex;
+    flex-direction:column ;
+    border-radius: 10px;
+    text-align: center;
+    width: 25%;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0px 2px 10px black ;
+    margin: 10px 10px;
+    cursor:default;
+
+}
 .dell{
     width: 100%;
 }
 .dell:hover .lki{
     height: 70px;
     width: 70px;
+    transition: .3s;
+}
+
+.dell:hover .data_lki{
+    height: 180px;
+    width: 180px;
     transition: .3s;
 }
 
@@ -247,12 +266,25 @@ body{
 .lki{
     width: 50px;
     height: 50px;
-    margin-top: 40px;
+    margin-top: 10px;
+    
+}
+
+.data_lki{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
     
 }
 
 .bld{
     margin-top: 25px;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(29, 29, 95);
+}
+.data_bld{
+    margin-top: 10px;
     font-size: 25px;
     font-weight: 400;
     color: rgb(29, 29, 95);
@@ -266,8 +298,20 @@ body{
     margin-left: 10%;
 
 }
+.inte_data{
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 15px;
+    font-style: italic;
+    width:80%;
+    margin-left: 10%;
+
+}
 @media (max-width:1230px ) {
     .kio{
+        width: 370px;
+    }
+    .data_kio{
         width: 370px;
     }
     
@@ -276,12 +320,19 @@ body{
     .kio{
         width: 320px;
     }
+    .data_kio{
+        width: 320px;
+    }
     
 }
 @media (max-width:680px ) {
     .kio{
         width:360px;
     }
+    .data_kio{
+        width: 360px;
+    }
+    
 }
 
 .rto{

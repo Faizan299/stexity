@@ -163,35 +163,50 @@
 
 
 
-    
-    <div class="jimo">
-        {% for dat in task %}
-            <div class="jhimy">
+<!--     
+    <div class="BHOP">
+        {% for data in task %}
+            <div class="voli">
              
-                <img class="gigi" src="{{ dat.image.url }}">
+                <img class="lki" src="{{ data.image.url }}">
                
             </div>
 
-            <div class="jhimy">
-                <h1 class="jhimy">{{ dat.name }}</h1>
+            <div class="voli">
+                <h1 class="bld">{{ data.name }}</h1>
                
             </div>
 
-            <div class="jhimy" >
-                <p class="jhimy">{{ dat.url }}</p>
+            <div class="voli" >
+                <p class="inte">{{ data.url }}</p>
                
             </div>
-            <div class="jhimy" >
-                <p class="jhimy">{{ dat.desc }}</p>
+            <div class="voli" >
+                <p class="inte">{{ data.desc }}</p>
                
             </div>
             
         {% endfor %}
 
+    </div> -->
 
+    <div class="BHOP">
+        {% for data in task %}
+        <div class="data_kio">
+            <div class="dell">
+                <img class="data_lki" src="{{ data.image.url }}">
+            </div>
+
+            <div class="voli">
+                <p class="inte_data">{{ data.url }}</p>
+                <h1 class="data_bld">{{ data.name }}</h1>
+                <p class="inte_data"> {{ data.desc }}</p>
+
+            </div>
+        </div>
+        {% endfor %}
 
     </div>
-
 
 
 
@@ -391,10 +406,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-
-
 
     {% block content%}{% endblock %}
 </body>
