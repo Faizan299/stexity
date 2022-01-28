@@ -89,7 +89,7 @@ DATABASES = {
 
 import dj_database_url
 db_form_env = dj_database_url.config(conn_max_age=600)
-DATABASES['defualt'].update(db_form_env)
+DATABASES['default'].update(db_form_env)
 
 
 # Password validation
