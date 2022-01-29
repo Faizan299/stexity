@@ -22,13 +22,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-n4(3!opm-+bjs#1vk1$633e9v7a$5(g258v293av-0)!509@*p'
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-n4(3!opm-+bjs#1vk1$633e9v7a$5(g258v293av-0)!509@*p'
+# SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['lit-eyrie-02098.herokuapp.com']
+ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['lit-eyrie-02098.herokuapp.com']
 
 
 # Application definition
@@ -87,9 +88,18 @@ DATABASES = {
     }
 }
 
+<<<<<<< HEAD
 import dj_database_url
 db_form_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_form_env)
+=======
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ha03172046587@gmail.com'
+EMAIL_HOST_PASSWORD = '@hyder_ali'
+>>>>>>> e9b4545b026b9ad04c6ad1df7172670e4ea288c1
 
 
 # Password validation
