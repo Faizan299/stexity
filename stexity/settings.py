@@ -88,11 +88,11 @@ DATABASES = {
     }
 }
 
-<<<<<<< HEAD
+
 import dj_database_url
 db_form_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_form_env)
-=======
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
